@@ -1,5 +1,4 @@
-# UE24CS341A-Software-Engineering
-# UE24CS341A — Software Engineering Lab Submissions
+# UE24CS341A — Software Engineering Lab
 
 **Name:** ES Sukruth
 **SRN:** PES1UG24CS160
