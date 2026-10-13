@@ -33,5 +33,18 @@
 
 ---
 
+## Lab 4 — Lunar Lander (Code Changes & Demo)
+
+| Deliverable | File |
+|---|---|
+| Game source | `Lab4/game.py` |
+| Changes diff | `Lab4/changes.diff` |
+| Before / After demo | `Lab4/before.mp4`, `Lab4/after.mp4` |
+| Demo recorder | `Lab4/record_demo.py` |
+| Chat history | `Lab4/Chat_History_Lab4.pdf` |
+| Lab notes | `Lab4/README.md` |
+
+---
+
 > Architecture chosen: **Layered Architecture**
 > Tools used: draw.io, Jira, Microsoft Word
