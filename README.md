@@ -46,5 +46,21 @@
 
 ---
 
+## Lab 5 — Static Code Analysis (Pylint, Bandit, Flake8)
+
+| Deliverable | File |
+|---|---|
+| Cleaned Python script | `Lab5/expense_tracker.py` |
+| Issue Documentation Table | `Lab5/issues.md` |
+| Reflection Answers | `Lab5/reflection.md` |
+| Reports (before) | `Lab5/before/` |
+| Reports (after) | `Lab5/after/` |
+| Lab notes | `Lab5/README.md` |
+
+**Source script:** `SETAPESU26/L5_32_expense_tracker`
+**Results:** Pylint 5.27 → 10.00/10 · Bandit 4 issues → 0 · Flake8 4 errors → 0
+
+---
+
 > Architecture chosen: **Layered Architecture**
-> Tools used: draw.io, Jira, Microsoft Word
+> Tools used: draw.io, Jira, Microsoft Word, Pylint, Bandit, Flake8
