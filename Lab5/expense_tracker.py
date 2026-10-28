@@ -28,7 +28,7 @@ def add_expense(amount, category="Misc", note=""):
         print("Ignoring invalid amount", amount)
         return False
     EXPENSES.append({
-        "amount" : amount,
+        "amount": amount,
         "category": category,
         "note": note,
         "time": datetime.now().isoformat(),
@@ -61,6 +61,7 @@ def biggest_expense():
     if not EXPENSES:
         return None
     return max(EXPENSES, key=lambda expense: expense["amount"])
+
 
 def print_ledger():
     """Print every recorded expense with a 1-based index."""
@@ -104,10 +105,13 @@ def main():
     set_budget(5000)
     print_ledger()
     print("Totals:", total_by_category())
-    print("Remaining budget:", remaining_budget()) # after set_budget
+    print("Remaining budget:", remaining_budget())  # after set_budget
     print("Biggest expense:", biggest_expense()["note"])
     print("Sync password accepted:", check_sync_password("guess"))
-    print("Summary:", len(EXPENSES), "expenses recorded against a budget of", _BUDGET["monthly"])
+    print(
+        "Summary:", len(EXPENSES),
+        "expenses recorded against a budget of", _BUDGET["monthly"],
+    )
 
 
 if __name__ == "__main__":
