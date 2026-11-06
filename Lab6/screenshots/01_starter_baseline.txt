@@ -1,0 +1,20 @@
+PS C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab6> python -m coverage run --branch -m pytest test_weather_alert.py
+============================= test session starts =============================
+platform win32 -- Python 3.14.0, pytest-9.2.0, pluggy-1.7.0
+rootdir: C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab6
+plugins: platformdirs-4.14.0
+collected 2 items
+
+test_weather_alert.py ..                                                 [100%]
+
+============================== 2 passed in 0.17s ==============================
+
+PS C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab6> python -m coverage report -m
+Name                    Stmts   Miss Branch BrPart  Cover   Missing
+-------------------------------------------------------------------
+test_weather_alert.py       6      0      0      0   100%
+weather_alert.py           38     26     28      4    24%   6, 8, 10, 15-23, 27-36, 42-45
+-------------------------------------------------------------------
+TOTAL                      44     26     28      4    31%
+
+PS C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab6> 
