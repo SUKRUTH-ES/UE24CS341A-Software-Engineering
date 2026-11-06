@@ -26,7 +26,7 @@ Target was at least 90% for each type. Both targets are met, and all tests pass.
 | Branch coverage screenshot (≥ 90%) | `screenshots/04_branch_coverage.png` |
 | Starter baseline, for reference | `screenshots/01_starter_baseline.png` |
 | Line tests under `--branch`, showing the gap | `screenshots/03_code_tests_branch_view.png` |
-| Raw terminal output for each screenshot | `screenshots/*.txt` |
+| Raw terminal output for the two reference images | `screenshots/01_starter_baseline.txt`, `screenshots/03_code_tests_branch_view.txt` |
 | Module and starter test (unchanged, from the assigned repo) | `weather_alert.py`, `test_weather_alert.py` |
 
 Commit 1 adds the code coverage tests and their screenshot. Commit 2 adds the branch coverage tests and their screenshot.
@@ -107,6 +107,9 @@ That gives **100% branch coverage (28/28 branches)**. Line coverage stays at 100
 
 ## Note on screenshots
 
-The PNGs in `screenshots/` were rendered from the real terminal output of the commands shown in
-them, run on this machine (Python 3.14.0, pytest 9.2.0, coverage 7.17.2). The same output is saved
-next to each PNG as `.txt`.
+The two graded screenshots, `02_code_coverage.png` and `04_branch_coverage.png`, are real screen
+captures of the terminal (Python 3.14.0, pytest 9.2.0, coverage 7.17.2).
+
+The two reference images, `01_starter_baseline.png` and `03_code_tests_branch_view.png`, were
+rendered from the real output of the commands shown in them. That output is saved next to each
+one as `.txt`.
