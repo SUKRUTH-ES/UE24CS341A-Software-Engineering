@@ -27,8 +27,8 @@ console output is byte-for-byte identical before and after the fixes.
 | Pylint report (before / after) | `before/pylint_report.txt`, `after/pylint_report.txt` |
 | Bandit report (before / after) | `before/bandit_report.txt`, `after/bandit_report.txt` |
 | Flake8 report (before / after) | `before/flake8_report.txt`, `after/flake8_report.txt` |
-| Original program output (behaviour baseline) | `program_output_before.txt` |
-| Intermediate commit stages | `stages/` |
+| Program output before fixes (behaviour baseline) | `program_output_before.txt` |
+| Program output after fixes (byte-identical to baseline) | `program_output_after.txt` |
 
 ## Security issues fixed (Bandit)
 

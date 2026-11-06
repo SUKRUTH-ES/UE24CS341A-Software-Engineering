@@ -1,0 +1,11 @@
+Biggest expense before any entries: None
+Ignoring invalid amount -50
+1 Food 450
+2 Travel 1200
+3 Food 300
+4 Bills 999
+Totals: {'Food': 750, 'Travel': 1200, 'Bills': 999}
+Remaining budget: 2051
+Biggest expense: Cab to airport
+Sync password accepted: False
+Summary: 4 expenses recorded against a budget of 5000

@@ -10,9 +10,9 @@
 
 | Deliverable | File |
 |---|---|
-| Requirements Table | `PES1UG24CS160_Requirements_Table_PS32.docx` |
-| UML Use-Case Diagram | `PES1UG24CS160_UML_Use_Case_Diagram_PS32.pdf` |
-| Use-Case Flow Specification | `PES1UG24CS160_UseCase_Flow_PS32.pdf` |
+| Requirements Table | `Lab1/PES1UG24CS160_Requirements_Table_PS32.docx` |
+| UML Use-Case Diagram | `Lab1/PES1UG24CS160_UML_Use_Case_Diagram_PS32.pdf` |
+| Use-Case Flow Specification | `Lab1/PES1UG24CS160_UseCase_Flow_PS32.pdf` |
 
 ---
 
@@ -20,7 +20,7 @@
 
 | Deliverable | File |
 |---|---|
-| Agile Jira Report | `PES1UG24CS160_Lab2_Agile_Jira_Report.pdf` |
+| Agile Jira Report | `Lab2/PES1UG24CS160_Lab2_Agile_Jira_Report.pdf` |
 
 ---
 
@@ -28,8 +28,8 @@
 
 | Deliverable | File |
 |---|---|
-| UML Component Diagram | `PES1UG24CS160_Lab3_ComponentDiagram.pdf` |
-| Written Justification | `PES1UG24CS160_Lab3_Written_Justification_PS32_v2.docx` |
+| UML Component Diagram | `Lab3/PES1UG24CS160_Lab3_ComponentDiagram.pdf` |
+| Written Justification | `Lab3/PES1UG24CS160_Lab3_Written_Justification_PS32.docx` |
 
 ---
 
