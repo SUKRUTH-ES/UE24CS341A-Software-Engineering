@@ -62,5 +62,19 @@
 
 ---
 
+## Lab 6 — Code and Branch Coverage Analysis (coverage, pytest)
+
+| Deliverable | File |
+|---|---|
+| Code coverage test cases | `Lab6/CodeCoverageTest_PES1UG24CS160_weather_alert.py` |
+| Branch coverage test cases | `Lab6/BranchCoverageTest_PES1UG24CS160_weather_alert.py` |
+| Coverage screenshots | `Lab6/screenshots/` |
+| Analysis and lab notes | `Lab6/README.md` |
+
+**Source repo:** `SETAPESU26/L6_L7_32_weather_alert`
+**Results:** Line coverage 32% → 100% · Branch coverage 24% → 100% (28/28 branches)
+
+---
+
 > Architecture chosen: **Layered Architecture**
-> Tools used: draw.io, Jira, Microsoft Word, Pylint, Bandit, Flake8
+> Tools used: draw.io, Jira, Microsoft Word, Pylint, Bandit, Flake8, coverage, pytest
