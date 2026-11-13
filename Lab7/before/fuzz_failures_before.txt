@@ -1,0 +1,261 @@
+FFFF.F.F.F                                                               [100%]
+================================== FAILURES ===================================
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py", line 40, in test_parse_reading_no_crash
+  |     @given(st.text() | st.none() | reading_like)
+  |                    ^^^
+  | ExceptionGroup: Hypothesis found 3 distinct failures. (3 sub-exceptions)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py", line 43, in test_parse_reading_no_crash
+    |     parse_reading(s)
+    |     ~~~~~~~~~~~~~^^^
+    |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\weather_alert.py", line 3, in parse_reading
+    |     return float(temp), int(humidity)
+    |            ~~~~~^^^^^^
+    | ValueError: could not convert string to float: ''
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py", line 45, in test_parse_reading_no_crash
+    |     assert False, f"parse_reading crashed on {s!r} with: {type(e).__name__}: {e}"
+    | AssertionError: parse_reading crashed on '/' with: ValueError: could not convert string to float: ''
+    | assert False
+    | Failing test case: test_parse_reading_no_crash(
+    |     s='/',
+    | )
+    +---------------- 2 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py", line 43, in test_parse_reading_no_crash
+    |     parse_reading(s)
+    |     ~~~~~~~~~~~~~^^^
+    |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\weather_alert.py", line 2, in parse_reading
+    |     temp, humidity = text.split('/')
+    |     ^^^^^^^^^^^^^^
+    | ValueError: not enough values to unpack (expected 2, got 1)
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py", line 45, in test_parse_reading_no_crash
+    |     assert False, f"parse_reading crashed on {s!r} with: {type(e).__name__}: {e}"
+    | AssertionError: parse_reading crashed on '' with: ValueError: not enough values to unpack (expected 2, got 1)
+    | assert False
+    | Failing test case: test_parse_reading_no_crash(
+    |     s='',
+    | )
+    +---------------- 3 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py", line 43, in test_parse_reading_no_crash
+    |     parse_reading(s)
+    |     ~~~~~~~~~~~~~^^^
+    |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\weather_alert.py", line 2, in parse_reading
+    |     temp, humidity = text.split('/')
+    |                      ^^^^^^^^^^
+    | AttributeError: 'NoneType' object has no attribute 'split'
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py", line 45, in test_parse_reading_no_crash
+    |     assert False, f"parse_reading crashed on {s!r} with: {type(e).__name__}: {e}"
+    | AssertionError: parse_reading crashed on None with: AttributeError: 'NoneType' object has no attribute 'split'
+    | assert False
+    | Failing test case: test_parse_reading_no_crash(
+    |     s=None,
+    | )
+    +------------------------------------
+C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py:40: ExceptionGroup: Hypothesis found 3 distinct failures. (3 sub-exceptions)
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py", line 49, in test_wind_category_no_crash
+  |     @given(st.text() | st.none())
+  |                    ^^^
+  | ExceptionGroup: Hypothesis found 2 distinct failures. (2 sub-exceptions)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py", line 52, in test_wind_category_no_crash
+    |     wind_category(s)
+    |     ~~~~~~~~~~~~~^^^
+    |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\weather_alert.py", line 6, in wind_category
+    |     speed = int(speed_text)
+    | ValueError: invalid literal for int() with base 10: ''
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py", line 54, in test_wind_category_no_crash
+    |     assert False, f"wind_category crashed on {s!r} with: {type(e).__name__}: {e}"
+    | AssertionError: wind_category crashed on '' with: ValueError: invalid literal for int() with base 10: ''
+    | assert False
+    | Failing test case: test_wind_category_no_crash(
+    |     s='',
+    | )
+    +---------------- 2 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py", line 52, in test_wind_category_no_crash
+    |     wind_category(s)
+    |     ~~~~~~~~~~~~~^^^
+    |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\weather_alert.py", line 6, in wind_category
+    |     speed = int(speed_text)
+    | TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py", line 54, in test_wind_category_no_crash
+    |     assert False, f"wind_category crashed on {s!r} with: {type(e).__name__}: {e}"
+    | AssertionError: wind_category crashed on None with: TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+    | assert False
+    | Failing test case: test_wind_category_no_crash(
+    |     s=None,
+    | )
+    +------------------------------------
+C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py:49: ExceptionGroup: Hypothesis found 2 distinct failures. (2 sub-exceptions)
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py", line 58, in test_rainfall_spread_no_crash
+  |     @given(st.text() | st.none() | csv_like)
+  |                    ^^^
+  | ExceptionGroup: Hypothesis found 2 distinct failures. (2 sub-exceptions)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py", line 61, in test_rainfall_spread_no_crash
+    |     rainfall_spread(s)
+    |     ~~~~~~~~~~~~~~~^^^
+    |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\weather_alert.py", line 14, in rainfall_spread
+    |     readings = [float(r) for r in readings_csv.split(',')]
+    |                 ~~~~~^^^
+    | ValueError: could not convert string to float: ''
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py", line 63, in test_rainfall_spread_no_crash
+    |     assert False, f"rainfall_spread crashed on {s!r} with: {type(e).__name__}: {e}"
+    | AssertionError: rainfall_spread crashed on '' with: ValueError: could not convert string to float: ''
+    | assert False
+    | Failing test case: test_rainfall_spread_no_crash(
+    |     s='',
+    | )
+    +---------------- 2 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py", line 61, in test_rainfall_spread_no_crash
+    |     rainfall_spread(s)
+    |     ~~~~~~~~~~~~~~~^^^
+    |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\weather_alert.py", line 14, in rainfall_spread
+    |     readings = [float(r) for r in readings_csv.split(',')]
+    |                                   ^^^^^^^^^^^^^^^^^^
+    | AttributeError: 'NoneType' object has no attribute 'split'
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py", line 63, in test_rainfall_spread_no_crash
+    |     assert False, f"rainfall_spread crashed on {s!r} with: {type(e).__name__}: {e}"
+    | AssertionError: rainfall_spread crashed on None with: AttributeError: 'NoneType' object has no attribute 'split'
+    | assert False
+    | Failing test case: test_rainfall_spread_no_crash(
+    |     s=None,
+    | )
+    +------------------------------------
+C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py:58: ExceptionGroup: Hypothesis found 2 distinct failures. (2 sub-exceptions)
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py", line 68, in test_all_functions_survive_any_type
+  |     @given(anything)
+  |                    ^
+  | ExceptionGroup: Hypothesis found 3 distinct failures. (3 sub-exceptions)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py", line 72, in test_all_functions_survive_any_type
+    |     fn(value)
+    |     ~~^^^^^^^
+    |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\weather_alert.py", line 2, in parse_reading
+    |     temp, humidity = text.split('/')
+    |                      ~~~~~~~~~~^^^^^
+    | TypeError: a bytes-like object is required, not 'str'
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py", line 74, in test_all_functions_survive_any_type
+    |     assert False, f"{fn.__name__} crashed on {value!r} with: {type(e).__name__}: {e}"
+    | AssertionError: parse_reading crashed on b'' with: TypeError: a bytes-like object is required, not 'str'
+    | assert False
+    | Failing test case: test_all_functions_survive_any_type(
+    |     value=b'',
+    | )
+    +---------------- 2 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py", line 72, in test_all_functions_survive_any_type
+    |     fn(value)
+    |     ~~^^^^^^^
+    |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\weather_alert.py", line 2, in parse_reading
+    |     temp, humidity = text.split('/')
+    |     ^^^^^^^^^^^^^^
+    | ValueError: not enough values to unpack (expected 2, got 1)
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py", line 74, in test_all_functions_survive_any_type
+    |     assert False, f"{fn.__name__} crashed on {value!r} with: {type(e).__name__}: {e}"
+    | AssertionError: parse_reading crashed on '' with: ValueError: not enough values to unpack (expected 2, got 1)
+    | assert False
+    | Failing test case: test_all_functions_survive_any_type(
+    |     value='',
+    | )
+    +---------------- 3 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py", line 72, in test_all_functions_survive_any_type
+    |     fn(value)
+    |     ~~^^^^^^^
+    |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\weather_alert.py", line 2, in parse_reading
+    |     temp, humidity = text.split('/')
+    |                      ^^^^^^^^^^
+    | AttributeError: 'NoneType' object has no attribute 'split'
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py", line 74, in test_all_functions_survive_any_type
+    |     assert False, f"{fn.__name__} crashed on {value!r} with: {type(e).__name__}: {e}"
+    | AssertionError: parse_reading crashed on None with: AttributeError: 'NoneType' object has no attribute 'split'
+    | assert False
+    | Failing test case: test_all_functions_survive_any_type(
+    |     value=None,
+    | )
+    +------------------------------------
+C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py:68: ExceptionGroup: Hypothesis found 3 distinct failures. (3 sub-exceptions)
+E   AssertionError: non-finite temperature from 'NAN/0'
+    assert False
+     +  where False = <built-in function isfinite>(nan)
+     +    where <built-in function isfinite> = math.isfinite
+    Failing test case: test_parse_reading_result_is_sane(
+        s='NAN/0',
+    )
+C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py:96: AssertionError: non-finite temperature from 'NAN/0'
+E   AssertionError: negative speed -1 was graded
+    assert 'none' is None
+     +  where 'none' = wind_category('-1')
+     +    where '-1' = str(-1)
+    Failing test case: test_wind_category_rejects_negative_speed(
+        speed=-1,
+    )
+C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py:109: AssertionError: negative speed -1 was graded
+E   AssertionError: non-finite spread nan from 'NAN'
+    assert False
+     +  where False = <built-in function isfinite>(nan)
+     +    where <built-in function isfinite> = math.isfinite
+    Failing test case: test_rainfall_spread_result_is_sane(
+        s='NAN',
+    )
+C:\Users\ES SUKRUTH\UE24CS341A-Software-Engineering\Lab7\before\test_weather_alert.py:127: AssertionError: non-finite spread nan from 'NAN'
+=========================== short test summary info ===========================
+FAILED test_weather_alert.py::test_parse_reading_no_crash - ExceptionGroup: H...
+FAILED test_weather_alert.py::test_wind_category_no_crash - ExceptionGroup: H...
+FAILED test_weather_alert.py::test_rainfall_spread_no_crash - ExceptionGroup:...
+FAILED test_weather_alert.py::test_all_functions_survive_any_type - Exception...
+FAILED test_weather_alert.py::test_parse_reading_result_is_sane - AssertionEr...
+FAILED test_weather_alert.py::test_wind_category_rejects_negative_speed - Ass...
+FAILED test_weather_alert.py::test_rainfall_spread_result_is_sane - Assertion...
+7 failed, 3 passed in 6.19s
