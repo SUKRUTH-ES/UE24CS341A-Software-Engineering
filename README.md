@@ -76,5 +76,19 @@
 
 ---
 
+## Lab 7 — Fuzzing for Input Validation Bugs (Hypothesis)
+
+| Deliverable | File |
+|---|---|
+| Fixed application script | `Lab7/weather_alert.py` |
+| Completed Hypothesis tests | `Lab7/test_weather_alert.py` |
+| Screenshots PDF | `Lab7/PES1UG24CS160_Lab7_FuzzTesting.pdf` |
+| Bug table, fixes and notes | `Lab7/README.md` |
+
+**Source repo:** `SETAPESU26/L6_L7_32_weather_alert` (`lab7/`)
+**Results:** 14 bugs found by fuzzing · tests 7 failed → 10/10 passed
+
+---
+
 > Architecture chosen: **Layered Architecture**
-> Tools used: draw.io, Jira, Microsoft Word, Pylint, Bandit, Flake8, coverage, pytest
+> Tools used: draw.io, Jira, Microsoft Word, Pylint, Bandit, Flake8, coverage, pytest, Hypothesis
