@@ -101,7 +101,7 @@ output as before.
 
 ## Observations
 
-- Six of the 14 bugs **don't crash**. They return nonsense, such as negative humidity, a `nan` temperature,
+- Four of the 14 bugs **don't crash** (rows 5, 6, 9 and 12). They return nonsense, such as negative humidity, a `nan` temperature,
   or a grade for a negative wind speed. A crash-only fuzz test can't see them; the behaviour properties caught them.
 - The starter's `st.text() | st.none()` input found the crashes within a few examples. The humidity and
   `nan` bugs needed the shaped generators, because random text almost never contains a valid `number/number`.
